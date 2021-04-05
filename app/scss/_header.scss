@@ -1,5 +1,43 @@
 .header{
   padding: 20px 0;
+  label{
+    position: absolute;
+    left: 50%;
+    animation-name: opaciti;
+    animation-duration: 4s;
+    cursor: pointer;
+  }
+  input[type ='checkbox'] {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #eae2e2;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    outline: none;
+    transition: all .2s;
+    &:before{
+      content: 'D';
+      width: 16px;
+      font-size: 15px;
+      text-align: center;
+      border-radius: 20px;
+      height: 17px;
+      bottom: 1.5px;
+      left: 2px;
+      position: absolute;
+      transition: all .2s;
+      background-color: #fff;
+    }
+  }
+  input[type ='checkbox']:checked{
+    background-color: aquamarine;
+    &:before{
+      content: 'L';
+      left: 32px;
+    }
+  }
   .header-wrapper{
     display: flex;
     justify-content: space-between;
@@ -37,7 +75,10 @@
   display: none;
   z-index: 33;
 }
-
+//.header-inner{
+//  animation-duration: 2s;
+//  animation-name: left-on-right-mod;
+//}
 .logo{
   font-weight: 700;
   font-size: 40px;
@@ -47,7 +88,7 @@
   animation-name: left-on-right;
   user-select: none;
 }
-.header-menu.active{
+.header-inner.active{
   left: 0;
   display: flex;
   align-items: center;

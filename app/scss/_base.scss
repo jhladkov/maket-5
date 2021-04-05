@@ -81,3 +81,14 @@ body[data-aos-duration="400"] [data-aos] {
 .lock{
   overflow: hidden;
 }
+.dark {
+  color: white;
+  background-color: #333;
+  .benefits-inner .benefits-inner-column{
+    color: white;
+  }
+  .place-wrapper-item-button{
+    border: 1px solid #fff;
+    color: white;
+  }
+}
