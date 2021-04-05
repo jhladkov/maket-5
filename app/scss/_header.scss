@@ -1,0 +1,56 @@
+.header{
+  padding: 20px 0;
+  .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    z-index: 12;
+
+    .header-menu-list{
+      display: flex;
+      flex-wrap: wrap;
+      animation-duration: 2s;
+      animation-name: left-on-right-mod;
+      .header-menu-list-title{
+        margin-right: 80px;
+        font-size: 18px;
+        animation-duration: 2s;
+        animation-name: left-on-right;
+        font-weight: 400;
+        a{
+          color: white;
+          transition: all .3s;
+          &:hover{
+            color: #8da2f2;
+          }
+        }
+        cursor: pointer;
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.header-menu-burger{
+  display: none;
+  z-index: 33;
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  animation-duration: 2s;
+  animation-name: left-on-right;
+  user-select: none;
+}
+.header-menu.active{
+  left: 0;
+  width: 100%;
+  ul{
+    display: block;
+  }
+}

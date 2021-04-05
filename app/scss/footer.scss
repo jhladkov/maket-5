@@ -1,0 +1,32 @@
+.footer{
+  background: #0E1D28;
+  color: white;
+  .footer-title{
+    animation: none;
+  }
+  .footer-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-between;
+    .footer-inner-list{
+      margin-right: 140px;
+      &:last-child{
+        margin: 0;
+      }
+      a{
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+  .footer-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.strong{
+  font-weight: 700;
+  font-size: 18px;
+}

@@ -1,0 +1,131 @@
+.entry{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .entry-background{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &:before{
+      content: '';
+      background: linear-gradient(180deg, rgba(53, 66, 103, 0.0001) 0%, #151824 95.04%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 4;
+    }
+  }
+  .entry-inner{
+    position: relative;
+    z-index: 12;
+    color: white;
+
+    .entry-title{
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 22px;
+      animation-duration: 2s;
+      animation-name: left-on-right;
+      span{
+        display: block;
+      }
+    }
+    .entry-text{
+      max-width: 545px;
+      animation-duration: 2s;
+      animation-name: left-on-right;
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+
+  }
+}
+.entry-question-button{
+  padding: 15px 40px;
+}
+.button{
+  background: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  animation-duration: 2s;
+  animation-name: rotate;
+  animation-direction: reverse;
+  font-weight: 500;
+  transition: all .3s;
+  &:hover{
+    background-color: #1B7DFF;
+    border: 1px solid white;
+    color: white;
+  }
+}
+
+.entry-question{
+  .entry-question-inner{
+    margin-bottom: 50px;
+    label{
+      margin-right: 20px;
+      position: relative;
+      padding-left: 25px;
+      animation-duration: 2s;
+      animation-name: bottom-on-top;
+    }
+    .entry-question-checkbox{
+      display: none;
+    }
+    .entry-question-item{
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+    .entry-question-checkbox:checked + .entry-question-item:before{
+      content: '';
+      position: absolute;
+      left: 26%;
+      bottom: 23%;
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius:50% ;
+
+    }
+  }
+
+}
+
+
+
+//.entry-question{
+//  display: flex;
+//  align-items: center;
+//  .entry-question-item{
+//    margin: 0 60px 0 0;
+//    padding: 0 0 22px 38px;
+//    animation-name: bottom-on-top;
+//    animation-duration: 2s;
+//    position: relative;
+//    border-bottom: 2px solid white;
+//
+//    &:before{
+//      content: 'O';
+//      font-size: 25px;
+//      position: absolute;
+//      left: 0;
+//      top: -5px;
+//    }
+//  }
+//}

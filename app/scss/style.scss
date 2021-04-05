@@ -1,0 +1,11 @@
+@import "header";
+@import "base";
+@import "libs";
+@import "vars";
+@import "Entry";
+@import "Benefits";
+@import "animation";
+@import "Inspiration";
+@import "footer";
+@import "Place";
+@import "media"; //почему ты решил подключать именно медия в html если все остальное ты импортишь в файл style

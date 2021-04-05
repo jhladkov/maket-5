@@ -1,0 +1,38 @@
+@keyframes left-on-right {
+  0%{
+    position: relative;
+    left: -619px ;
+  }
+  100%{
+    position: relative;
+    left: 0;
+  }
+}
+@keyframes left-on-right-mod {
+  0%{
+    position: relative;
+    left: -960px;
+  }
+  100%{
+    position: relative;
+    left: 0;
+  }
+}
+@keyframes bottom-on-top {
+  0%{
+    position: relative;
+    bottom: -205px;
+  }
+  100%{
+    position: relative;
+    bottom: 0;
+  }
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
