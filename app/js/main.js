@@ -32,9 +32,10 @@ if (isMobile.any()) {
 
 $(function () {
     $('.inspiration-inner').slick({
-        infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
     })
 })
 
@@ -70,9 +71,23 @@ function getVideo() {
 // menu burger
 const menuBurger = document.querySelector('.header-menu-burger');
 const headerMenu = document.querySelector('.header-menu');
+const body = document.querySelector('body');
 
 menuBurger.onclick = () => {
     menuBurger.classList.toggle('open');
+    body.classList.toggle('lock');
     headerMenu.classList.toggle('active');
+
+}
+let width = window.matchMedia('(min-width:849px)');
+width.addListener(changes);
+changes(screen)
+
+function changes(screen) {
+    if (screen.matches) {
+        menuBurger.classList.remove('open');
+        body.classList.remove('lock');
+        headerMenu.classList.remove('active');
+    }
 }
 

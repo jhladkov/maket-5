@@ -2,6 +2,9 @@
   .entry .entry-inner .entry-title {
     font-size: calc(23px + (50 - 23) * ((100vw - 320px) / (1270 - 320)));
   }
+  .header .header-wrapper .header-menu-list .header-menu-list-title{
+    padding:calc(5px + (20 - 5) * ((100vw - 320px) / (1270 - 320))) !important;
+  }
   .entry .entry-inner .entry-text{
     font-size: calc(15px + (16 - 13) * ((100vw - 320px) / (1270 - 320)));
   }
@@ -51,26 +54,105 @@
   .benefits-inner-column:last-child{
     grid-column: span 2;
   }
-
-
 }
-@media (max-width: 855px){
+@media (max-width: 850px) {
+  .header .header-wrapper{
+    position: absolute;
+    z-index: 5;
+    padding: 20px 15px;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .header-menu-burger{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    &:before{
+      content: '';
+      background-color: white;
+      position: absolute;
+      transition: all .3s;
+      top: 7px;
+      height: 2px;
+      width: 100%;
+    }
+    &:after{
+      content: '';
+      background-color: white;
+      transition: all .3s;
+      position: absolute;
+      bottom: 5px;
+      height: 2px;
+      width: 100%;
+    }
+    .header-menu-burger-line{
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      height: 2px;
+      width: 100%;
 
-}
-@media (max-width: 720px) {
+    }
+  }
+  .header-menu-burger.open .header-menu-burger-line{
+    display: none;
+  }
+  .header-menu-burger.open{
+    &:before{
+      transform: rotate(45deg);
+      top: 15px;
+    }
+    &:after{
+      bottom: 12px;
+      transform: rotate(-45deg);
+    }
+  }
   .header-menu{
     position: absolute;
     left: -100%;
-    background-color: rgba(224,224,224,0.9);
+    top: 0;
+    background-color: rgba(11, 12, 42 , 0.9);
     height: 100vh;
+    display: flex;
+    align-items: center;
     overflow: auto;
     -webkit-transition: left 0.3s ease;
     -o-transition: left 0.3s ease;
     transition: left 0.3s ease;
   }
+  .header .header-wrapper .header-menu-list .header-menu-list-title{
+    margin-bottom: 42px;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    &:hover{
+      color: #fff;
+      background-color: #1B7DFF ;
+    }
+  }
+  .header .header-wrapper .header-menu-list .header-menu-list-title a{
+    color: #fff;
+  }
   .header .header-wrapper .header-menu-list{
     display: block;
+    width: 90%;
   }
+}
+@media (max-width: 815px){
+  .sub-inner-content-title{
+    margin-bottom: 20px;
+  }
+  .sub-inner-content-text{
+    margin-bottom: 20px;
+  }
+
+}
+@media (max-width: 720px) {
+
   .sub-inner-content-text{
     margin-bottom: 20px;
   }
@@ -95,36 +177,7 @@
   .sub-inner{
     flex-direction: column;
   }
-  .header-menu-burger{
-    position: relative;
-    display: block;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    .header-menu-burger-line{
-      background-color: white;
-      position: absolute;
-      top: 50%;
-      height: 2px;
-      width: 100%;
-      &:before{
-        content: '';
-        background-color: white;
-        position: absolute;
-        top: -8px;
-        height: 2px;
-        width: 100%;
-      }
-      &:after{
-        content: '';
-        background-color: white;
-        position: absolute;
-        bottom: -8px;
-        height: 2px;
-        width: 100%;
-      }
-    }
-  }
+
   .entry-question-button{
     display: block;
   }
@@ -147,10 +200,44 @@
   .entry-question .entry-question-inner label{
     margin-right: 0;
     margin-bottom: 30px;
-    display: block;
+    display: inline-block;
   }
   .place-wrapper .place-wrapper-item .place-wrapper-item-information{
     top: 81%;
   }
 
+}
+@media (max-height: 515px) {
+  .entry-question .entry-question-inner{
+    margin: 0;
+  }
+  .entry .entry-inner .entry-title span{
+    display: inline-block;
+  }
+  .section:first-child{
+    padding-top: 40px;
+  }
+  .entry-question-button{
+    padding: 5px 10px;
+    height: 35px;
+  }
+  .entry-question{
+    display: flex;
+  }
+  .entry-question .entry-question-inner label{
+    font-size: 12px;
+  }
+  .entry .entry-inner .entry-text{
+    margin-bottom: 25px;
+  }
+}
+@media (max-height: 321px) {
+  .entry{
+    height: 100%;
+  }
+  .header .header-wrapper .header-menu-list .header-menu-list-title{
+    width: 50%;
+    padding: 5px !important;
+    margin-bottom: 20px;
+  }
 }
