@@ -3,7 +3,7 @@
     font-size: calc(23px + (50 - 23) * ((100vw - 320px) / (1270 - 320)));
   }
   .header label{
-    left: 37%;
+    left: 35%;
     bottom: 19px;
   }
   .header .header-wrapper .header-menu-list .header-menu-list-title{
@@ -39,7 +39,9 @@
   .footer .footer-wrapper{
     padding:calc(50px + (100 - 20) * ((100vw - 320px) / (1270 - 320)));
   }
+
 }
+
 @media (max-width: 1200px) {
   .header{
     label{
@@ -85,7 +87,7 @@
   }
   .header{
     label{
-      left: 10%;
+      left: 11%;
       bottom: 20%;
     }
   }
@@ -167,7 +169,7 @@
     width: 100%;
   }
   .header-menu{
-    width: 80%;
+    width: 250px;
   }
 }
 @media (max-width: 815px){
@@ -210,6 +212,45 @@
     display: block;
   }
 }
+@media (max-height:620px){
+  .header label {
+    bottom: 10%;
+  }
+
+  .header .header-wrapper .header-menu-list .header-menu-list-title{
+    padding:calc(5px + (20 - 5) * ((100vh - 320px) / (1270 - 320))) !important;
+    margin-right:calc(30px + (80 - 30) * ((100vh - 850px) / (1270 - 850))) ;
+  }
+  .entry .entry-inner .entry-text{
+    font-size: calc(15px + (16 - 13) * ((100vh - 320px) / (1270 - 320)));
+  }
+  .header-logo{
+    font-size:calc(33px + (40 - 33) * ((100vh - 320px) / (1270 - 320))); ;
+  }
+  .entry-question-button{
+    padding: calc(10px + (15 - 10) * ((100vh - 320px) / (1270 - 320))) calc(25px + (40 - 25) * ((100vw - 320px) / (1270 - 320))) ;
+    font-size: calc(17px + (24 - 17) * ((100vh - 320px) / (1270 - 320)));
+  }
+  .benefits-inner .benefits-inner-column .benefits-inner-column-img{
+    margin-bottom: calc(20px + (37 - 20) * ((100vh - 320px) / (1270 - 320)));
+  }
+  .section-title{
+    font-size:calc(30px + (35 - 30) * ((100vh - 320px) / (1270 - 320)));
+  }
+  .inspiration-inner-img-title{
+    font-size: calc(20px + (50 - 20) * ((100vh - 320px) / (1270 - 320)));
+  }
+  .sub-inner-content-title{
+    font-size: calc(24px + (30 - 24) * ((100vh - 320px) / (1270 - 320)));
+  }
+  iframe{
+    max-width:calc(250px + (600 - 300) * ((100vh - 320px) / (1270 - 320)));
+    max-height:calc(250px + (600 - 255) * ((100vh - 320px) / (1270 - 320)));
+  }
+  .footer .footer-wrapper{
+    padding:calc(50px + (100 - 20) * ((100vh - 320px) / (1270 - 320)));
+  }
+}
 @media (max-width: 603px) {
   .benefits-inner-column:last-child{
     grid-column: span 1;
@@ -225,6 +266,7 @@
   .place-wrapper{
     grid-template-columns: repeat(auto-fit, 288px);
   }
+
   .entry-question .entry-question-inner label{
     margin-right: 0;
     margin-bottom: 30px;
@@ -239,6 +281,13 @@
   .entry-question .entry-question-inner{
     margin: 0;
   }
+  .inspiration-w-wrapper {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .sub-inner {
+    padding-top: 20px;
+  }
   .entry .entry-inner .entry-title span{
     display: inline-block;
   }
@@ -251,6 +300,9 @@
   }
   .entry-question{
     display: flex;
+  }
+  .header label{
+    bottom: 2%;
   }
   .entry-question .entry-question-inner label{
     font-size: 12px;

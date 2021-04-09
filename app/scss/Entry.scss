@@ -77,6 +77,7 @@
       margin-right: 20px;
       position: relative;
       padding-left: 25px;
+      cursor: pointer;
       animation-duration: 2s;
       animation-name: bottom-on-top;
     }
@@ -106,26 +107,3 @@
   }
 
 }
-
-
-
-//.entry-question{
-//  display: flex;
-//  align-items: center;
-//  .entry-question-item{
-//    margin: 0 60px 0 0;
-//    padding: 0 0 22px 38px;
-//    animation-name: bottom-on-top;
-//    animation-duration: 2s;
-//    position: relative;
-//    border-bottom: 2px solid white;
-//
-//    &:before{
-//      content: 'O';
-//      font-size: 25px;
-//      position: absolute;
-//      left: 0;
-//      top: -5px;
-//    }
-//  }
-//}

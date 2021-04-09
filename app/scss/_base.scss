@@ -31,7 +31,6 @@ main{
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  justify-content: space-between;
 }
 .main-wrapper{
   flex: 1 0 auto;
@@ -90,5 +89,41 @@ body[data-aos-duration="400"] [data-aos] {
   .place-wrapper-item-button{
     border: 1px solid #fff;
     color: white;
+  }
+}
+body.touch{
+  .inspiration-inner-img-title{
+    opacity: 1;
+  }
+  .header{
+    label{
+      animation: none;
+    }
+    .header-menu-list{
+      animation: none;
+    }
+    .header-menu-list-title{
+      animation: none;
+    }
+    .logo{
+      animation: none;
+    }
+  }
+  .entry-inner{
+    .entry-title{
+      animation: none;
+    }
+    .entry-text{
+      animation: none;
+    }
+  }
+
+  .entry-question-inner{
+    label{
+      animation: none;
+    }
+  }
+  .entry-question-button{
+    animation: none;
   }
 }

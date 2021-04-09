@@ -80,7 +80,9 @@ menuBurger.onclick = () => {
     menuBurger.classList.toggle('open');
     body.classList.toggle('lock');
     headerInner.classList.toggle('active');
-
+    window.onscroll = () => {
+        scrollWatch()
+    }
 }
 darkMod.onclick = () => {
     body.classList.toggle('dark')
@@ -93,7 +95,18 @@ function changes(screen) {
     if (screen.matches) {
         menuBurger.classList.remove('open');
         body.classList.remove('lock');
-        headerMenu.classList.remove('active');
+        headerInner.classList.remove('active');
     }
 }
+function scrollWatch() {
+    let wahScroll = window.pageYOffset;
+    if (!menuBurger.classList.contains('open') && !body.classList.contains('lock') && !headerInner.classList.contains('active')){
+        window.onscroll = null;
+    }
+    if (wahScroll > 0) {
+        menuBurger.classList.remove('open');
+        body.classList.remove('lock');
+        headerInner.classList.remove('active');
+    }
 
+}
