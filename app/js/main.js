@@ -73,7 +73,7 @@ const menuBurger = document.querySelector('.header-menu-burger');
 const headerMenu = document.querySelector('.header-menu');
 const body = document.querySelector('body');
 const headerInner = document.querySelector('.header-inner');
-const darkMod = document.querySelector('.header-inner-check-box');
+
 
 
 menuBurger.onclick = () => {
@@ -83,9 +83,6 @@ menuBurger.onclick = () => {
     window.onscroll = () => {
         scrollWatch()
     }
-}
-darkMod.onclick = () => {
-    body.classList.toggle('dark')
 }
 let width = window.matchMedia('(min-width:849px)');
 width.addListener(changes);

@@ -32,16 +32,12 @@
       font-size: 50px;
       font-weight: 500;
       margin-bottom: 22px;
-      animation-duration: 2s;
-      animation-name: left-on-right;
       span{
         display: block;
       }
     }
     .entry-text{
       max-width: 545px;
-      animation-duration: 2s;
-      animation-name: left-on-right;
       font-size: 16px;
       margin-bottom: 60px;
     }
@@ -58,8 +54,7 @@
   color: white;
   cursor: pointer;
   font-size: 24px;
-  animation-duration: 2s;
-  animation-name: rotate;
+
   animation-direction: reverse;
   font-weight: 500;
   transition: all .3s;
@@ -78,8 +73,6 @@
       position: relative;
       padding-left: 25px;
       cursor: pointer;
-      animation-duration: 2s;
-      animation-name: bottom-on-top;
     }
     .entry-question-checkbox{
       display: none;

@@ -2,10 +2,6 @@
   .entry .entry-inner .entry-title {
     font-size: calc(23px + (50 - 23) * ((100vw - 320px) / (1270 - 320)));
   }
-  .header label{
-    left: 35%;
-    bottom: 19px;
-  }
   .header .header-wrapper .header-menu-list .header-menu-list-title{
     padding:calc(5px + (20 - 5) * ((100vw - 320px) / (1270 - 320))) !important;
     margin-right:calc(30px + (80 - 30) * ((100vw - 850px) / (1270 - 850))) ;
@@ -41,14 +37,6 @@
   }
 
 }
-
-@media (max-width: 1200px) {
-  .header{
-    label{
-      bottom: 15px;
-    }
-  }
-}
 @media (max-width: 1000px) {
   .footer .footer-wrapper{
     display: block;
@@ -64,13 +52,6 @@
     justify-content: center;
   }
 }
-@media (max-width: 930px) {
-  .header{
-    label{
-      bottom: 13px;
-    }
-  }
-}
 @media (max-width: 907px) {
   .benefits-inner-column:last-child{
     grid-column: span 2;
@@ -84,12 +65,6 @@
     top: 0;
     right: 0;
     left: 0;
-  }
-  .header{
-    label{
-      left: 11%;
-      bottom: 20%;
-    }
   }
   .header-menu-burger{
     position: relative;
@@ -213,10 +188,6 @@
   }
 }
 @media (max-height:620px){
-  .header label {
-    bottom: 10%;
-  }
-
   .header .header-wrapper .header-menu-list .header-menu-list-title{
     padding:calc(5px + (20 - 5) * ((100vh - 320px) / (1270 - 320))) !important;
     margin-right:calc(30px + (80 - 30) * ((100vh - 850px) / (1270 - 850))) ;
@@ -300,9 +271,6 @@
   }
   .entry-question{
     display: flex;
-  }
-  .header label{
-    bottom: 2%;
   }
   .entry-question .entry-question-inner label{
     font-size: 12px;

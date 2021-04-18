@@ -1,12 +1,5 @@
 .header{
   padding: 20px 0;
-  label{
-    position: absolute;
-    left: 50%;
-    animation-name: opaciti;
-    animation-duration: 4s;
-    cursor: pointer;
-  }
   input[type ='checkbox'] {
     position: relative;
     width: 50px;
@@ -48,13 +41,9 @@
     .header-menu-list{
       display: flex;
       flex-wrap: wrap;
-      animation-duration: 2s;
-      animation-name: left-on-right-mod;
       .header-menu-list-title{
         margin-right: 80px;
         font-size: 18px;
-        animation-duration: 2s;
-        animation-name: left-on-right;
         font-weight: 400;
         a{
           color: white;
@@ -84,8 +73,6 @@
   font-size: 40px;
   color: white;
   cursor: pointer;
-  animation-duration: 2s;
-  animation-name: left-on-right;
   user-select: none;
 }
 .header-inner.active{

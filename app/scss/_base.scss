@@ -91,6 +91,48 @@ body[data-aos-duration="400"] [data-aos] {
     color: white;
   }
 }
+body.pc{
+  .header{
+    label{
+      animation-name: opaciti;
+      animation-duration: 4s;
+    }
+    .header-menu-list{
+      animation-duration: 2s;
+      animation-name: left-on-right-mod;
+      .header-menu-list-title{
+        animation-duration: 2s;
+        animation-name: left-on-right;
+      }
+    }
+    .logo{
+      animation-duration: 2s;
+      animation-name: left-on-right;
+    }
+  }
+  .entry{
+    .entry-title{
+      animation-duration: 2s;
+      animation-name: left-on-right;
+    }
+    .entry-text{
+      animation-duration: 2s;
+      animation-name: left-on-right;
+    }
+    .button{
+      animation-duration: 2s;
+      animation-name: rotate;
+    }
+  }
+  .entry-question-inner{
+    label{
+      animation-duration: 2s;
+      animation-name: bottom-on-top;
+    }
+  }
+}
+
+
 body.touch{
   .inspiration-inner-img-title{
     opacity: 1;
